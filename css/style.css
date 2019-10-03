@@ -59,3 +59,9 @@ body {
 .titleMessage .heading .sub {
 	font-size: 19px;
 }
+
+.section {
+	/* 100px top and botton, 0 on left and right */
+	padding: 100px 0;
+	background-color: rgba(0, 0, 0, 0.9);
+}
