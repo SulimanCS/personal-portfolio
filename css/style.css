@@ -124,3 +124,10 @@ body {
 .chart .percent:after {
 	content: '%';
 }
+
+.owl-nav {
+	color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+}
