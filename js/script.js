@@ -14,5 +14,27 @@ $(document).ready(function() {
 		startDelay: 750,
 		showCursor: false
 	});
+
+	$('.owl-carousel').owlCarousel({
+	    loop: false,
+	    items: 10,
+	    nav: true,
+	    pagination: false,
+	    dots: false,
+	    responsive:{
+	        0:{
+	            items: 1
+	        },
+	        480:{
+	            items: 2
+	        },
+	        768:{
+	            items: 3
+	        },
+	        1000:{
+	            items: 4
+	        }
+	    }
+	});
 	
 });
