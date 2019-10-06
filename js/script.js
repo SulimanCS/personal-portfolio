@@ -36,5 +36,34 @@ $(document).ready(function() {
 	        }
 	    }
 	});
-	
+
+
+    var skillsTopOffset = $(".skillsSection").offset().top;
+    //console.log(skillsTopOffset)
+
+	var countUpFinished = false;	
+    $(window).scroll(function() {
+
+    	//console.log(window.pageYOffset)
+    	if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+    
+		    $('.chart').easyPieChart({
+		            //your options goes here
+		            easing: 'easeInOut',
+		            barColor: '#fff',
+		            trackColor: '#333',
+		            scaleColor: false,
+		            lineWidth: 6,
+		            size: 152,
+		            lineCap: 'round',
+		            onStep: function(from, to, percent) {
+		            	$(this.el).find('.percent').text(Math.round(percent));
+		            }
+		    });
+    	}
+
+    });
+
+
+
 });
