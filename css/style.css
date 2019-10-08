@@ -196,3 +196,22 @@ body {
 .counter, .counterPlus {
 	display: inline-block;
 }
+
+.contactSection {
+	color: #fff;
+}
+
+.contactButton {
+	color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.contactButton:hover {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.9);
+	background-color: #fff;
+}
