@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+	};
+
+	var isMobile = isMobileDevice();
+	console.log(isMobile)
+
 	$('#slides').superslides({
 		animation: 'fade',
 		play: 7500,
