@@ -60,6 +60,17 @@ body {
 	font-size: 19px;
 }
 
+@media (orientation: portrait) {
+
+	.titleMessage .heading .main {
+		font-size: 86px;
+	}
+
+	.titleMessage .heading .sub {
+		font-size: 38px;
+	}
+}
+
 .section {
 	/* 100px top and botton, 0 on left and right */
 	padding: 100px 0;
